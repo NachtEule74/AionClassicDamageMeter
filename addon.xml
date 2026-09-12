@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AddonInfo>
+    <Addon name="DamageMeter" version="1.0">
+        <Description>Real-time DPS and HPS Damage Meter for Aion Classic 1.2-2.5</Description>
+        <Author>NachtEule74</Author>
+        <Dependencies/>
+        <Compatibility minVersion="1.2" maxVersion="2.5"/>
+        <Files>
+            <File path="DamageMeter.lua"/>
+            <File path="Commands.lua"/>
+            <File path="Config.lua"/>
+            <File path="DamageMeter.xml"/>
+        </Files>
+        <Launch>
+            <OnLoad function="DamageMeter.Initialize"/>
+        </Launch>
+    </Addon>
+</AddonInfo>
