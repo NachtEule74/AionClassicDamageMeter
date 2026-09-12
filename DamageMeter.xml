@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Component>
+    <Addon name="DamageMeter" version="1.0">
+        <Element name="DamageMeter" type="Window">
+            <Attribute name="Width" value="350"/>
+            <Attribute name="Height" value="300"/>
+            <Attribute name="BackColor" value="0x00000000"/>
+            <Attribute name="BorderColor" value="0xFF808080"/>
+            <Attribute name="BorderWidth" value="1"/>
+            <Attribute name="ShowBorder" value="true"/>
+            <Attribute name="Movable" value="true"/>
+            <Attribute name="Visible" value="true"/>
+            
+            <!-- Title Bar -->
+            <Element name="TitleBar" type="Window">
+                <Attribute name="Width" value="100%"/>
+                <Attribute name="Height" value="25"/>
+                <Attribute name="BackColor" value="0xFF1a1a1a"/>
+                <Attribute name="BorderColor" value="0xFF404040"/>
+                <Attribute name="BorderWidth" value="1"/>
+                
+                <Element name="TitleText" type="Text">
+                    <Attribute name="Left" value="5"/>
+                    <Attribute name="Top" value="5"/>
+                    <Attribute name="Width" value="280"/>
+                    <Attribute name="Height" value="15"/>
+                    <Attribute name="TextColor" value="0xFFFFFF00"/>
+                    <Attribute name="Text" value="Damage Meter"/>
+                    <Attribute name="FontName" value="Arial"/>
+                    <Attribute name="FontSize" value="11"/>
+                </Element>
+                
+                <!-- Reset Button -->
+                <Element name="ResetButton" type="Button">
+                    <Attribute name="Left" value="315"/>
+                    <Attribute name="Top" value="5"/>
+                    <Attribute name="Width" value="30"/>
+                    <Attribute name="Height" value="15"/>
+                    <Attribute name="Text" value="[R]"/>
+                    <Attribute name="TextColor" value="0xFFFFFFFF"/>
+                    <Attribute name="BackColor" value="0xFF404040"/>
+                    <Attribute name="FontSize" value="9"/>
+                </Element>
+            </Element>
+            
+            <!-- Stats Display -->
+            <Element name="StatsPanel" type="Window">
+                <Attribute name="Left" value="0"/>
+                <Attribute name="Top" value="25"/>
+                <Attribute name="Width" value="100%"/>
+                <Attribute name="Height" value="275"/>
+                <Attribute name="BackColor" value="0x00000000"/>
+                
+                <!-- DPS Label -->
+                <Element name="DPSLabel" type="Text">
+                    <Attribute name="Left" value="5"/>
+                    <Attribute name="Top" value="5"/>
+                    <Attribute name="Width" value="340"/>
+                    <Attribute name="Height" value="15"/>
+                    <Attribute name="Text" value="DPS: 0.0 | Total: 0"/>
+                    <Attribute name="TextColor" value="0xFFFF6B6B"/>
+                    <Attribute name="FontName" value="Arial"/>
+                    <Attribute name="FontSize" value="10"/>
+                </Element>
+                
+                <!-- HPS Label -->
+                <Element name="HPSLabel" type="Text">
+                    <Attribute name="Left" value="5"/>
+                    <Attribute name="Top" value="22"/>
+                    <Attribute name="Width" value="340"/>
+                    <Attribute name="Height" value="15"/>
+                    <Attribute name="Text" value="HPS: 0.0 | Total: 0"/>
+                    <Attribute name="TextColor" value="0xFF6BFF6B"/>
+                    <Attribute name="FontName" value="Arial"/>
+                    <Attribute name="FontSize" value="10"/>
+                </Element>
+                
+                <!-- Time Label -->
+                <Element name="TimeLabel" type="Text">
+                    <Attribute name="Left" value="5"/>
+                    <Attribute name="Top" value="39"/>
+                    <Attribute name="Width" value="340"/>
+                    <Attribute name="Height" value="15"/>
+                    <Attribute name="Text" value="Duration: 0s"/>
+                    <Attribute name="TextColor" value="0xFFAAAAAA"/>
+                    <Attribute name="FontName" value="Arial"/>
+                    <Attribute name="FontSize" value="9"/>
+                </Element>
+                
+                <!-- Divider -->
+                <Element name="Divider" type="Window">
+                    <Attribute name="Left" value="0"/>
+                    <Attribute name="Top" value="60"/>
+                    <Attribute name="Width" value="100%"/>
+                    <Attribute name="Height" value="1"/>
+                    <Attribute name="BackColor" value="0xFF404040"/>
+                </Element>
+                
+                <!-- Players List -->
+                <Element name="PlayersList" type="Window">
+                    <Attribute name="Left" value="0"/>
+                    <Attribute name="Top" value="65"/>
+                    <Attribute name="Width" value="100%"/>
+                    <Attribute name="Height" value="210"/>
+                    <Attribute name="BackColor" value="0x00000000"/>
+                </Element>
+            </Element>
+        </Element>
+    </Addon>
+</Component>
